@@ -172,7 +172,7 @@ REST_FRAMEWORK = {
     # added default JWT authentication class from JWT which is used for authentication
     "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
     # added default permission class from rest_framework which is used for permission
-    "DEFAULT_PERMISSION_CLASSES": "rest_framework.permissions.IsAuthenticated",
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
 }
 
 # https://djoser.readthedocs.io/en/latest/settings.html
